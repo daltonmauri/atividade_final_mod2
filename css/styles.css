@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:wght@700&display=swap');
+
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+* {
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
+}
+
+body {
+    background: url(https://miro.medium.com/max/1100/0*T-00y415dIPvddOR.jpeg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+main.container {
+    background: #fff;
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.329);
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    color: #8e54e9;
+    
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 85px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: #8e54e9;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    position: relative;
+}
+
+form .inputField:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.inputField .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgb(0, 0, 0, 0.2);
+
+}
+
+.inputField .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #4476e6, #8e54e9);
+    transform: scaleX(0);
+}
+
+.inputField input:focus ~ .underline::after{
+    transform: scaleX(1);
+
+}
+
+.inputField input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0, 0.7);
+
+}
+
+.inputField input::placeholder {
+    color: rgb(0, 0, 0, 0.5);
+
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #4476e6, #8e54e9);
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #4476e6, #8e54e9);
+
+}
+
+
+form h4 {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left, #4476e6, #8e54e9);
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form h4:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #4476e6, #8e54e9);
+    text-decoration: linear-gradient(to right, #4476e6, #8e54e9);
+
+}
